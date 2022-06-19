@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  font-family: 'Poppins',sans-serif;
+}
+
+.container{
+  height: 100vh;
+  position: relative;
+  top: 150px;
+  left: 25em;
+  max-width: 70%;
+  width: 100%;
+  background-color: #fff;
+}
+.container .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+.container .title::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 1017px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #242627, #ac7500);
+}
+.content form .user-details{
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+  margin-top: 200px;
+  margin-bottom: 800px;
+  width: calc(100% / 2 - 20px);
+}
+form .input-box span.details{
+  display: block;
+  width: 1000px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input{
+  height: 45px;
+  width: 1000px;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+form .user-details .input-box1{
+  width: calc(100% / 2 - 20px);
+}
+.user-details .input-box1 input{
+  height: 45px;
+  width: 1000px;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.user-details .input-box1 input:focus,
+.user-details .input-box1 input:valid{
+  border-color: #ac7500;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  border-color: #ac7500;
+}
+form .RadioCheck-details .RadioCheck-title{
+  font-size: 20px;
+  font-weight: 500;
+}
+form .category{
+  display: flex;
+  width: 80%;
+  justify-content: left;
+}
+form .category label{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 20px;
+}
+form .category label .dot{
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two{
+  background: #ac7500;
+  border-color: #d9d9d9;
+}
+form input[type="radio"]{
+  display: none;
+}
+form .button{
+  height: 45px;
+  margin: 35px 0
+}
+form .button input{
+  height: 100%;
+  width: 550px;
+  position: relative;
+  left: 17em;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #242627, #ac7500);
+  margin-bottom: 20px;
+}
+form .button input:hover{
+  /* transform: scale(0.99); */
+  background: linear-gradient(-135deg, #242627, #ac7500);
+  }
+
+@media(max-width: 1600px){
+  .container{
+    position: relative;
+    left: 300px;
+  }
+}
+
+@media(max-width: 1486px){
+  .container{
+    position: relative;
+    left: 200px;
+  }
+}
+
+@media(max-width: 1330px){
+  .container{
+    position: relative;
+    left: 100px;
+  }
+}
+
+@media(max-width: 1178px){
+  .container{
+    position: relative;
+    left: 50px;
+  }
+}
+
+@media(max-width: 1109px){
+  .container{
+    position: relative;
+    left: 10px;
+  }
+}
+
+@media(max-width: 900px){
+  .content{
+    position: relative;
+    top: 150px;
+    left: 0;
+    font-size: 17px;
+  }
+  .container{
+    font-size: 17px;
+    position: relative;
+    left: 10px;
+  }
+  .content form .user-details{
+    display: block;
+    align-items: left;
+    justify-content: left;
+    margin: 20px 0 12px 0;
+    font-size: 17px;
+  }
+  .user-details .input-box input{
+    width: 501px;
+  }
+  .user-details .input-box1 input{
+    width: 501px;
+  }
+  .container .title::before{
+    width: 501px;
+  }
+  .container .title{
+    font-size: 17px;
+    font-weight: 501;
+    position: relative;
+  }
+  form .input-box span.details{
+    width: 501px;
+  }
+}
+
+@media(max-width: 500px){
+  .content{
+    position: relative;
+    top: 150px;
+    left: 0;
+    font-size: 17px;
+  }
+  .container{
+    font-size: 17px;
+    position: relative;
+    left: 10px;
+  }
+  .content form .user-details{
+    display: block;
+    align-items: left;
+    justify-content: left;
+    margin: 20px 0 12px 0;
+    font-size: 17px;
+  }
+  .user-details .input-box input{
+    width: 300px;
+  }
+  .user-details .input-box1 input{
+    width: 301px;
+  }
+  .container .title::before{
+    width: 300px;
+  }
+  .container .title{
+    font-size: 17px;
+    font-weight: 500;
+    position: relative;
+  }
+  form .input-box span.details{
+    width: 325px;
+  }
+
+}

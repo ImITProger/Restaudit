@@ -1,0 +1,119 @@
+.dws {
+ position: relative;
+ margin-top: 100px;
+ left: 650px;
+ transform: translate(-50%, -50%);
+}
+.hidden{
+    visibility: hidden;
+}
+.dws1 {
+    position: relative;
+    margin-top: 100px;
+    left: 250px;
+    transform: translate(-50%, -50%);
+}
+.dws2 {
+    position: relative;
+    margin-top: 100px;
+    left: 665px;
+    transform: translate(-50%, -50%);
+}
+.butt {
+ border: 3px solid #ac7500;
+ font-size: 30px;
+ color: #d1a324;
+ text-decoration: none;
+ text-transform: uppercase;
+ width: 250px;
+ height: 60px;
+ display: block;
+ text-align: center;
+ line-height: 60px;
+ font-family: Arial, sans-serif;
+ position: relative;
+ transition: .5s;
+ overflow: hidden;
+ cursor: pointer;
+}
+.butt::before,
+.butt::after {
+ position: absolute;
+ content: '';
+ width: 100%;
+ height: 100%;
+ background: #ac7500;
+ top: 0;
+ left: -100%;
+ opacity: .5;
+ transition: .3s;
+ z-index: -1;
+}
+.butt::after {
+ opacity: 1;
+ transition-delay: .2s;
+}
+.butt:hover {
+ color: #fff;
+}
+.butt:hover::before,
+.butt:hover::after {
+ left: 0;
+}
+
+.butt1 {
+    border: 3px solid #ac7500;
+    font-size: 30px;
+    color: #d1a324;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 250px;
+    height: 60px;
+    display: block;
+    text-align: center;
+    line-height: 60px;
+    font-family: Arial, sans-serif;
+    position: relative;
+    transition: .5s;
+    overflow: hidden;
+    cursor: pointer;
+   }
+   .butt1:hover {
+    
+    background: #ac7500;
+    color: black;
+   }
+   .butt1:hover::before,
+   .butt1:hover::after {
+    left: 0;
+   }
+
+@media(max-width: 901px){
+    .dws1{
+        position: relative;
+        left: 300px;
+    }
+    .dws {
+        position: relative;
+        left: 230px;
+    }
+    .dws2{
+        position: relative;
+        left: 350px;
+    }
+}
+
+@media(max-width: 450px){
+    .dws1{
+        position: relative;
+        left: 200px;
+    }
+    .dws {
+        position: relative;
+        left: 80px;
+    }
+    .dws2{
+        position: relative;
+        left: 150px;
+    }
+}
